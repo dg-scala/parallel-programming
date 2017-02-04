@@ -46,8 +46,8 @@ object VerticalBoxBlur {
    */
   def blur(src: Img, dst: Img, from: Int, end: Int, radius: Int): Unit = {
     for {
-      col <- from to end
-      row <- 0 to src.width
+      row <- from until end
+      col <- 0 until src.height
     } yield {
       dst(row, col) = boxBlurKernel(src, row, col, radius)
     }
