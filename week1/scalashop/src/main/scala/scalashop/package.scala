@@ -44,13 +44,15 @@ package object scalashop {
     if (radius <= 0)
       src(x, y)
     else {
+      val w = src.width - 1
+      val h = src.height - 1
       var (count, r, g, b, a) = (0, 0, 0, 0, 0)
 
-      var row = clamp(x - radius, 0, src.width)
-      while (row <= clamp(x + radius, 0, src.width)) {
+      var row = clamp(x - radius, 0, w)
+      while (row <= clamp(x + radius, 0, w)) {
 
-        var col = clamp(y - radius, 0, src.height)
-        while (col <= clamp(y + radius, 0, src.height)) {
+        var col = clamp(y - radius, 0, h)
+        while (col <= clamp(y + radius, 0, h)) {
           val pixel = src(row, col)
           r += red(pixel)
           g += green(pixel)

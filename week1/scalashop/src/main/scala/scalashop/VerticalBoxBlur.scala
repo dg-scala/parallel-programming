@@ -60,9 +60,6 @@ object VerticalBoxBlur {
    *  columns.
    */
   def parBlur(src: Img, dst: Img, numTasks: Int, radius: Int): Unit = {
-    def clamp(n: Int, min: Int, max: Int) =
-      if (n < min) min else if (n > max) max else n
-
     val tasks: Array[ForkJoinTask[Unit]] = new Array(numTasks)
     val offset = src.width / numTasks
 
