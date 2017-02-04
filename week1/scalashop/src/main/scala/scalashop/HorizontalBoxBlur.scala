@@ -1,5 +1,7 @@
 package scalashop
 
+import java.util.concurrent.ForkJoinTask
+
 import org.scalameter._
 import common._
 
@@ -42,9 +44,12 @@ object HorizontalBoxBlur {
    *  Within each row, `blur` traverses the pixels by going from left to right.
    */
   def blur(src: Img, dst: Img, from: Int, end: Int, radius: Int): Unit = {
-  // TODO implement this method using the `boxBlurKernel` method
-
-  ???
+    for {
+      row <- from to end
+      col <- 0 to src.height
+    } yield {
+      dst(row, col) = boxBlurKernel(src, row, col, radius)
+    }
   }
 
   /** Blurs the rows of the source image in parallel using `numTasks` tasks.
@@ -54,9 +59,23 @@ object HorizontalBoxBlur {
    *  rows.
    */
   def parBlur(src: Img, dst: Img, numTasks: Int, radius: Int): Unit = {
-  // TODO implement using the `task` construct and the `blur` method
+    def clamp(n: Int, min: Int, max: Int) =
+      if (n < min) min else if (n > max) max else n
 
-  ???
+    val tasks: Array[ForkJoinTask[Unit]] = new Array(numTasks)
+    val offset = src.width / numTasks
+
+    var (row, i) = (0, 0)
+    while (row <= src.height) {
+      tasks.update(i, task { blur(src, dst, row, clamp(row + offset, 0, src.height), radius) })
+      row += (offset + 1)
+      i += 1
+    }
+
+    for ( i <- 0 to (numTasks - 2)) yield {
+      tasks(i).join()
+    }
+    tasks(numTasks - 1)
   }
 
 }
