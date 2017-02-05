@@ -48,21 +48,21 @@ package object scalashop {
       val h = src.height - 1
       var (count, r, g, b, a) = (0, 0, 0, 0, 0)
 
-      var row = clamp(x - radius, 0, w)
-      while (row <= clamp(x + radius, 0, w)) {
+      var col = clamp(x - radius, 0, w)
+      while (col <= clamp(x + radius, 0, w)) {
 
-        var col = clamp(y - radius, 0, h)
-        while (col <= clamp(y + radius, 0, h)) {
-          val pixel = src(row, col)
+        var row = clamp(y - radius, 0, h)
+        while (row <= clamp(y + radius, 0, h)) {
+          val pixel = src(col, row)
           r += red(pixel)
           g += green(pixel)
           b += blue(pixel)
           a += alpha(pixel)
 
           count += 1
-          col += 1
+          row += 1
         }
-        row += 1
+        col += 1
       }
       rgba(r / count, g / count, b / count, a / count)
     }

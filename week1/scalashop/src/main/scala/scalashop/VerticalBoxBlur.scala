@@ -46,11 +46,9 @@ object VerticalBoxBlur {
    */
   def blur(src: Img, dst: Img, from: Int, end: Int, radius: Int): Unit = {
     for {
-      row <- from until end
-      col <- 0 until src.height
-    } yield {
-      dst(row, col) = boxBlurKernel(src, row, col, radius)
-    }
+      col <- from until end
+      row <- 0 until src.height
+    } yield dst(col, row) = boxBlurKernel(src, col, row, radius)
   }
 
   /** Blurs the columns of the source image in parallel using `numTasks` tasks.
@@ -66,26 +64,28 @@ object VerticalBoxBlur {
       else
         (numTasks, dimension / numTasks)
 
+    def forkTask(start: Int, end: Int): ForkJoinTask[Unit] =
+      task {
+        blur(src, dst, start, end, radius)
+      }
+
     val (size, taskSize) = parallelParameters(src.width)
     val tasks: Array[ForkJoinTask[Unit]] = new Array(size)
 
     var col = 0
-    for ( i <- 0 until size) yield
-      if (i == size - 1) {
-        tasks.update(i, task {
-          blur(src, dst, col, clamp(col + taskSize, 0, src.width), radius)
-        })
+    for ( i <- 0 until size) yield {
+      if (i < size - 1) {
+        tasks.update(i, forkTask(col, col + taskSize))
         col += taskSize
       }
-      else { // in the last iteration we grab all that's left
-        tasks.update(i, task {
-          blur(src, dst, col, src.width, radius)
-        })
+      else {
+        // in the last iteration we grab all that's left
+        tasks.update(i, forkTask(col, src.width))
       }
+    }
 
     // wait for tasks to complete
-    for ( i <- 0 to (size - 2)) yield tasks(i).join()
-    tasks(size - 1)
+    for ( i <- 0 until size) yield tasks(i).join()
   }
 
 }
