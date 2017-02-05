@@ -59,20 +59,32 @@ object HorizontalBoxBlur {
    *  rows.
    */
   def parBlur(src: Img, dst: Img, numTasks: Int, radius: Int): Unit = {
-    val tasks: Array[ForkJoinTask[Unit]] = new Array(numTasks)
-    val offset = src.width / numTasks
+    def parallelParameters(dimension: Int): (Int, Int) =
+      if (numTasks <= 0 || dimension <= numTasks)
+        (dimension, 1)
+      else
+        (numTasks, dimension / numTasks)
 
-    var (row, i) = (0, 0)
-    while (row <= src.height) {
-      tasks.update(i, task { blur(src, dst, row, clamp(row + offset, 0, src.height), radius) })
-      row += (offset + 1)
-      i += 1
-    }
+    val (size, taskSize) = parallelParameters(src.height)
+    val tasks: Array[ForkJoinTask[Unit]] = new Array(size)
 
-    for ( i <- 0 to (numTasks - 2)) yield {
-      tasks(i).join()
-    }
-    tasks(numTasks - 1)
+    var row = 0
+    for ( i <- 0 until size) yield
+      if (i == size - 1) {
+        tasks.update(i, task {
+          blur(src, dst, row, clamp(row + taskSize, 0, src.height), radius)
+        })
+        row += taskSize
+      }
+      else { // in the last iteration we grab all that's left
+        tasks.update(i, task {
+          blur(src, dst, row, src.height, radius)
+        })
+      }
+
+    // wait for tasks to complete
+    for ( i <- 0 to (size - 2)) yield tasks(i).join()
+    tasks(size - 1)
   }
 
 }
