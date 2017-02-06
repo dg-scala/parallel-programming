@@ -1,8 +1,8 @@
-Your overall score for this assignment is 3.75 out of 10.00
+Your overall score for this assignment is 4.38 out of 10.00
 
 
 The code you submitted did not pass all of our tests: your submission achieved a score of
-3.75 out of 10.00 in our tests.
+4.38 out of 10.00 in our tests.
 
 In order to find bugs in your code, we advise to perform the following steps:
  - Take a close look at the test output that you can find below: it should point you to
@@ -16,7 +16,7 @@ In order to find bugs in your code, we advise to perform the following steps:
 Below you can find a short feedback for every individual test that failed.
 
 ======== LOG OF FAILED TESTS ========
-Your solution achieved a testing score of 60 out of 160.
+Your solution achieved a testing score of 70 out of 160.
 
 Below you can see a short feedback for every test that failed,
 indicating the reason for the test failure and how many points
@@ -31,18 +31,12 @@ consumption (OutOfMemoryException).
 [Observed Error] 0 did not equal 3 (destination(2, 0) should be 3)
 [Lost Points] 5
 
-[Test Description] VerticalBoxBlur.parBlur should not throw an exception when too many tasks are available
-[Observed Error] java.lang.NullPointerException was thrown.
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 5
-
 [Test Description] VerticalBoxBlur.parBlur with radius 1 and 4 tasks should correctly blur the entire 3x3 image
 [Observed Error] 0 did not equal 2 (destination(0, 0) should be 2)
 [Lost Points] 5
 
 [Test Description] HorizontalBoxBlur.parBlur with radius 1 and 32 tasks should correctly blur the entire 3x3 image
-[Observed Error] java.lang.NullPointerException was thrown.
-[exception was thrown] detailed error message in debug output section below
+[Observed Error] 0 did not equal 21 (destination(0, 0) should be 21)
 [Lost Points] 5
 
 [Test Description] HorizontalBoxBlur.parBlur with radius 1 and 1 task should correctly blur the entire 3x3 image
@@ -50,8 +44,7 @@ consumption (OutOfMemoryException).
 [Lost Points] 5
 
 [Test Description] VerticalBoxBlur.parBlur with 32 tasks should execute 32 parallel tasks for a 32x64 image, each blurring one strip
-[Observed Error] java.lang.NullPointerException was thrown.
-[exception was thrown] detailed error message in debug output section below
+[Observed Error] Some("<error message>") was not empty A parallel task did not blur any new pixels.
 [Lost Points] 15
 
 [Test Description] VerticalBoxBlur.parBlur should not forget the last strip
@@ -59,32 +52,23 @@ consumption (OutOfMemoryException).
 [Lost Points] 5
 
 [Test Description] HorizontalBoxBlur.parBlur with 32 tasks should execute 32 parallel tasks for a 64x32 image, each blurring one strip
-[Observed Error] java.lang.NullPointerException was thrown.
-[exception was thrown] detailed error message in debug output section below
+[Observed Error] Some("<error message>") was not empty A parallel task did not blur any new pixels.
 [Lost Points] 15
-
-[Test Description] HorizontalBoxBlur.parBlur should not throw an exception when too many tasks are available
-[Observed Error] java.lang.NullPointerException was thrown.
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 5
 
 [Test Description] HorizontalBoxBlur.parBlur with radius 1 and 4 tasks should correctly blur the entire 3x3 image
 [Observed Error] 0 did not equal 2 (destination(0, 0) should be 2)
 [Lost Points] 5
 
 [Test Description] VerticalBoxBlur.parBlur with radius 1 and 32 tasks should correctly blur the entire 3x3 image
-[Observed Error] java.lang.NullPointerException was thrown.
-[exception was thrown] detailed error message in debug output section below
+[Observed Error] 0 did not equal 21 (destination(0, 0) should be 21)
 [Lost Points] 5
 
 [Test Description] VerticalBoxBlur.parBlur with 32 tasks should modify each pixel of the destination 32x32 image exactly once
-[Observed Error] java.lang.NullPointerException was thrown.
-[exception was thrown] detailed error message in debug output section below
+[Observed Error] 0 did not equal 1 (access count at 0, 0 is not 1)
 [Lost Points] 10
 
 [Test Description] HorizontalBoxBlur.parBlur with 32 tasks should modify each pixel of the destination 32x32 image exactly once
-[Observed Error] java.lang.NullPointerException was thrown.
-[exception was thrown] detailed error message in debug output section below
+[Observed Error] 0 did not equal 1 (access count at 0, 0 is not 1)
 [Lost Points] 10
 
 [Test Description] VerticalBoxBlur.parBlur with radius 1 and 1 task should correctly blur the entire 3x3 image
@@ -92,236 +76,4 @@ consumption (OutOfMemoryException).
 [Lost Points] 5
 
 ======== TESTING ENVIRONMENT ========
-Limits: memory: 256m,  total time: 850s,  per test case time: 240s
-
-======== DEBUG OUTPUT OF TESTING TOOL ========
-[test failure log] test name: BlurSuite::HorizontalBoxBlur.parBlur should not throw an exception when too many tasks are available::5
-java.lang.NullPointerException
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply$mcVI$sp(HorizontalBoxBlur.scala:73)
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply(HorizontalBoxBlur.scala:72)
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply(HorizontalBoxBlur.scala:72)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.immutable.Range.foreach(Range.scala:166)
-scala.collection.TraversableLike$class.map(TraversableLike.scala:245)
-scala.collection.AbstractTraversable.map(Traversable.scala:104)
-scalashop.HorizontalBoxBlur$.parBlur(HorizontalBoxBlur.scala:72)
-scalashop.BlurSuite$$anonfun$11.apply$mcV$sp(BlurSuite.scala:204)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-
-
-[test failure log] test name: BlurSuite::HorizontalBoxBlur.parBlur with radius 1 and 32 tasks should correctly blur the entire 3x3 image::5
-java.lang.NullPointerException
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply$mcVI$sp(HorizontalBoxBlur.scala:73)
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply(HorizontalBoxBlur.scala:72)
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply(HorizontalBoxBlur.scala:72)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.immutable.Range.foreach(Range.scala:166)
-scala.collection.TraversableLike$class.map(TraversableLike.scala:245)
-scala.collection.AbstractTraversable.map(Traversable.scala:104)
-scalashop.HorizontalBoxBlur$.parBlur(HorizontalBoxBlur.scala:72)
-scalashop.BlurSuite$$anonfun$16.apply$mcV$sp(BlurSuite.scala:319)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-
-
-[test failure log] test name: BlurSuite::HorizontalBoxBlur.parBlur with 32 tasks should execute 32 parallel tasks for a 64x32 image, each blurring one strip::15
-java.lang.NullPointerException
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply$mcVI$sp(HorizontalBoxBlur.scala:73)
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply(HorizontalBoxBlur.scala:72)
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply(HorizontalBoxBlur.scala:72)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.immutable.Range.foreach(Range.scala:166)
-scala.collection.TraversableLike$class.map(TraversableLike.scala:245)
-scala.collection.AbstractTraversable.map(Traversable.scala:104)
-scalashop.HorizontalBoxBlur$.parBlur(HorizontalBoxBlur.scala:72)
-scalashop.BlurSuite$$anonfun$17$$anonfun$apply$mcV$sp$8.apply$mcV$sp(BlurSuite.scala:395)
-scalashop.BlurSuite$$anonfun$17$$anonfun$apply$mcV$sp$8.apply(BlurSuite.scala:394)
-scalashop.BlurSuite$$anonfun$17$$anonfun$apply$mcV$sp$8.apply(BlurSuite.scala:394)
-scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
-scalashop.BlurSuite$$anonfun$17.apply$mcV$sp(BlurSuite.scala:394)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-
-
-[test failure log] test name: BlurSuite::HorizontalBoxBlur.parBlur with 32 tasks should modify each pixel of the destination 32x32 image exactly once::10
-java.lang.NullPointerException
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply$mcVI$sp(HorizontalBoxBlur.scala:73)
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply(HorizontalBoxBlur.scala:72)
-scalashop.HorizontalBoxBlur$$anonfun$parBlur$2.apply(HorizontalBoxBlur.scala:72)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.immutable.Range.foreach(Range.scala:166)
-scala.collection.TraversableLike$class.map(TraversableLike.scala:245)
-scala.collection.AbstractTraversable.map(Traversable.scala:104)
-scalashop.HorizontalBoxBlur$.parBlur(HorizontalBoxBlur.scala:72)
-scalashop.BlurSuite$$anonfun$20.apply$mcV$sp(BlurSuite.scala:410)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-
-
-[test failure log] test name: BlurSuite::VerticalBoxBlur.parBlur should not throw an exception when too many tasks are available::5
-java.lang.NullPointerException
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply$mcVI$sp(VerticalBoxBlur.scala:74)
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply(VerticalBoxBlur.scala:73)
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply(VerticalBoxBlur.scala:73)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.immutable.Range.foreach(Range.scala:166)
-scala.collection.TraversableLike$class.map(TraversableLike.scala:245)
-scala.collection.AbstractTraversable.map(Traversable.scala:104)
-scalashop.VerticalBoxBlur$.parBlur(VerticalBoxBlur.scala:73)
-scalashop.BlurSuite$$anonfun$21.apply$mcV$sp(BlurSuite.scala:421)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-
-
-[test failure log] test name: BlurSuite::VerticalBoxBlur.parBlur with radius 1 and 32 tasks should correctly blur the entire 3x3 image::5
-java.lang.NullPointerException
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply$mcVI$sp(VerticalBoxBlur.scala:74)
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply(VerticalBoxBlur.scala:73)
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply(VerticalBoxBlur.scala:73)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.immutable.Range.foreach(Range.scala:166)
-scala.collection.TraversableLike$class.map(TraversableLike.scala:245)
-scala.collection.AbstractTraversable.map(Traversable.scala:104)
-scalashop.VerticalBoxBlur$.parBlur(VerticalBoxBlur.scala:73)
-scalashop.BlurSuite$$anonfun$26.apply$mcV$sp(BlurSuite.scala:533)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-
-
-[test failure log] test name: BlurSuite::VerticalBoxBlur.parBlur with 32 tasks should execute 32 parallel tasks for a 32x64 image, each blurring one strip::15
-java.lang.NullPointerException
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply$mcVI$sp(VerticalBoxBlur.scala:74)
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply(VerticalBoxBlur.scala:73)
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply(VerticalBoxBlur.scala:73)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.immutable.Range.foreach(Range.scala:166)
-scala.collection.TraversableLike$class.map(TraversableLike.scala:245)
-scala.collection.AbstractTraversable.map(Traversable.scala:104)
-scalashop.VerticalBoxBlur$.parBlur(VerticalBoxBlur.scala:73)
-scalashop.BlurSuite$$anonfun$27$$anonfun$apply$mcV$sp$10.apply$mcV$sp(BlurSuite.scala:599)
-scalashop.BlurSuite$$anonfun$27$$anonfun$apply$mcV$sp$10.apply(BlurSuite.scala:598)
-scalashop.BlurSuite$$anonfun$27$$anonfun$apply$mcV$sp$10.apply(BlurSuite.scala:598)
-scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
-scalashop.BlurSuite$$anonfun$27.apply$mcV$sp(BlurSuite.scala:598)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-
-
-[test failure log] test name: BlurSuite::VerticalBoxBlur.parBlur with 32 tasks should modify each pixel of the destination 32x32 image exactly once::10
-java.lang.NullPointerException
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply$mcVI$sp(VerticalBoxBlur.scala:74)
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply(VerticalBoxBlur.scala:73)
-scalashop.VerticalBoxBlur$$anonfun$parBlur$2.apply(VerticalBoxBlur.scala:73)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245)
-scala.collection.immutable.Range.foreach(Range.scala:166)
-scala.collection.TraversableLike$class.map(TraversableLike.scala:245)
-scala.collection.AbstractTraversable.map(Traversable.scala:104)
-scalashop.VerticalBoxBlur$.parBlur(VerticalBoxBlur.scala:73)
-scalashop.BlurSuite$$anonfun$30.apply$mcV$sp(BlurSuite.scala:614)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+Limits: memory: 256m,  total time: 850s,  per test case time: 240s+
