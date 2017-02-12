@@ -1,8 +1,8 @@
-Your overall score for this assignment is 3.33 out of 10.00
+Your overall score for this assignment is 6.67 out of 10.00
 
 
 The code you submitted did not pass all of our tests: your submission achieved a score of
-3.33 out of 10.00 in our tests.
+6.67 out of 10.00 in our tests.
 
 In order to find bugs in your code, we advise to perform the following steps:
  - Take a close look at the test output that you can find below: it should point you to
@@ -16,7 +16,7 @@ In order to find bugs in your code, we advise to perform the following steps:
 Below you can find a short feedback for every individual test that failed.
 
 ======== LOG OF FAILED TESTS ========
-Your solution achieved a testing score of 50 out of 150.
+Your solution achieved a testing score of 100 out of 150.
 
 Below you can see a short feedback for every test that failed,
 indicating the reason for the test failure and how many points
@@ -151,51 +151,6 @@ consumption (OutOfMemoryException).
 [Observed Error] an implementation is missing
 [exception was thrown] detailed error message in debug output section below
 [Lost Points] 2
-
-[Test Description] parBalance should invoke the parallel construct 7 times for string '()()()()' and threshold 1
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 10
-
-[Test Description] balance should work for string of length 1
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 5
-
-[Test Description] parBalance should not use task construct directly and should only use the parallel construct
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 5
-
-[Test Description] parBalance should work for nested parentheses and threshold 1
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 5
-
-[Test Description] balance should work for nested parentheses
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 5
-
-[Test Description] parBalance should work for string of length 2 and threshold 1
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 5
-
-[Test Description] balance should work for sequence of parentheses without nesting
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 5
-
-[Test Description] balance should work for string of length 2
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 5
-
-[Test Description] balance should work for empty string
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 5
 
 ======== TESTING ENVIRONMENT ========
 Limits: memory: 256m,  total time: 850s,  per test case time: 240s
@@ -924,83 +879,3 @@ org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
 org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
 org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
 org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
-
-
-[test failure log] test name: ParallelParenthesesBalancingSuite::balance should work for empty string::5
-scala.NotImplementedError: an implementation is missing
-scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-reductions.ParallelParenthesesBalancing$.balance(ParallelParenthesesBalancing.scala:44)
-reductions.ParallelParenthesesBalancingSuite$$anonfun$1.check$1(ParallelParenthesesBalancingSuite.scala:26)
-reductions.ParallelParenthesesBalancingSuite$$anonfun$1.apply$mcV$sp(ParallelParenthesesBalancingSuite.scala:29)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
-org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
-org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
-org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
-org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
-
-
-[test failure log] test name: ParallelParenthesesBalancingSuite::balance should work for string of length 1::5
-scala.NotImplementedError: an implementation is missing
-scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-reductions.ParallelParenthesesBalancing$.balance(ParallelParenthesesBalancing.scala:44)
-reductions.ParallelParenthesesBalancingSuite$$anonfun$2.check$2(ParallelParenthesesBalancingSuite.scala:38)
-reductions.ParallelParenthesesBalancingSuite$$anonfun$2.apply$mcV$sp(ParallelParenthesesBalancingSuite.scala:41)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
-org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
-org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
-org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
-org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
-
-
-[test failure log] test name: ParallelParenthesesBalancingSuite::balance should work for string of length 2::5
-scala.NotImplementedError: an implementation is missing
-scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-reductions.ParallelParenthesesBalancing$.balance(ParallelParenthesesBalancing.scala:44)
-reductions.ParallelParenthesesBalancingSuite$$anonfun$3.check$3(ParallelParenthesesBalancingSuite.scala:52)
-reductions.ParallelParenthesesBalancingSuite$$anonfun$3.apply$mcV$sp(ParallelParenthesesBalancingSuite.scala:55)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(
-[Feedback clipped, Coursera doesn't allow us to display more than 64kb of feedback]
