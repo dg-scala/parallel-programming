@@ -1,0 +1,1006 @@
+Your overall score for this assignment is 3.33 out of 10.00
+
+
+The code you submitted did not pass all of our tests: your submission achieved a score of
+3.33 out of 10.00 in our tests.
+
+In order to find bugs in your code, we advise to perform the following steps:
+ - Take a close look at the test output that you can find below: it should point you to
+   the part of your code that has bugs.
+ - Run the tests that we provide with the handout on your code.
+ - The tests we provide do not test your code in depth: they are very incomplete. In order
+   to test more aspects of your code, write your own unit tests.
+ - Take another very careful look at the assignment description. Try to find out if you
+   misunderstood parts of it. While reading through the assignment, write more tests.
+
+Below you can find a short feedback for every individual test that failed.
+
+======== LOG OF FAILED TESTS ========
+Your solution achieved a testing score of 50 out of 150.
+
+Below you can see a short feedback for every test that failed,
+indicating the reason for the test failure and how many points
+you lost for each individual test.
+
+Tests that were aborted took too long too complete or crashed the
+JVM. Such crashes can arise due to infinite non-terminitaing
+loops or recursion (StackOverflowException) or excessive memory
+consumption (OutOfMemoryException).
+
+[Test Description] downsweep should correctly handle trees with a single leaf
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 1
+
+[Test Description] lineOfSight should correctly handle an array of size 5
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 1
+
+[Test Description] parLineOfSight should invoke the parallel construct 30 times (15 times during upsweep and 15 times during downsweep) for an array of size 17, with threshold 1
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 3
+
+[Test Description] downsweepSequential should correctly handle empty chunks. E.g. if from >= end, downsweepSequential should not write anything into the output array
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 1
+
+[Test Description] downsweepSequential should correctly handle a chunk of size 2 of an input array of size 5
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] downsweep should invoke the parallel construct n times for a tree with n internal nodes
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 3
+
+[Test Description] upsweep should correctly compute the tree on the indices 1 until 5 of a 5 element array for threshold 2
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] lineOfSight should correctly handle an array of size 4
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 1
+
+[Test Description] downsweep should correctly compute the output for a tree with 4 leaves when the starting angle is zero
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] downsweep should correctly compute the output for a non-zero starting angle
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] parLineOfSight should correctly compute the output for threshold 3
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] upsweepSequential should correcly handle the chunk 1 until 5 of an array of 5 elements
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] upsweepSequential should correctly handle the chunk 1 until 4 of an array of 4 elements
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] parLineOfSight should call parallel constuct 6 times, where the last two parallel constructs should update the 4 sections of the array (1 until 5), (5 until 9), (9 until 13), (13 until 17), respectively
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 6
+
+[Test Description] upsweep should correctly compute the tree on the indices 1 until 5 of a 5 element array for threshold 1
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] upsweepSequential should correctly handle a chunk of size 3 in an array of 5 elements
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] upsweep should invoke the parallel construct 15 times for an array section of size 16, with threshold 1
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 3
+
+[Test Description] upsweep should not use task construct directly and should only use the parallel construct
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 1
+
+[Test Description] downsweepSequential should correctly handle a chunk of size 3 of an input array of size 5
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] downsweepSequential should correctly handle a 4 element array when the starting angle is zero
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] downsweep should not use task construct directly and should only use the parallel construct
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 1
+
+[Test Description] upsweepSequential should correctly handle a chunk of size 2 in an array of 5 elements
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] parLineOfSight should correctly compute the output for threshold 2
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] lineOfSight should correctly handle an array with only one element (which corresponds to the observer)
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 1
+
+[Test Description] downsweepSequential should correctly handle a 5 element array when the starting angle is zero
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 2
+
+[Test Description] parBalance should invoke the parallel construct 7 times for string '()()()()' and threshold 1
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 10
+
+[Test Description] balance should work for string of length 1
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 5
+
+[Test Description] parBalance should not use task construct directly and should only use the parallel construct
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 5
+
+[Test Description] parBalance should work for nested parentheses and threshold 1
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 5
+
+[Test Description] balance should work for nested parentheses
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 5
+
+[Test Description] parBalance should work for string of length 2 and threshold 1
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 5
+
+[Test Description] balance should work for sequence of parentheses without nesting
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 5
+
+[Test Description] balance should work for string of length 2
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 5
+
+[Test Description] balance should work for empty string
+[Observed Error] an implementation is missing
+[exception was thrown] detailed error message in debug output section below
+[Lost Points] 5
+
+======== TESTING ENVIRONMENT ========
+Limits: memory: 256m,  total time: 850s,  per test case time: 240s
+
+======== DEBUG OUTPUT OF TESTING TOOL ========
+[test failure log] test name: LineOfSightSuite::lineOfSight should correctly handle an array of size 4::1
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.lineOfSight(LineOfSight.scala:37)
+reductions.LineOfSightSuite$$anonfun$1.apply$mcV$sp(LineOfSightSuite.scala:25)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::lineOfSight should correctly handle an array of size 5::1
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.lineOfSight(LineOfSight.scala:37)
+reductions.LineOfSightSuite$$anonfun$2.apply$mcV$sp(LineOfSightSuite.scala:32)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::lineOfSight should correctly handle an array with only one element (which corresponds to the observer)::1
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.lineOfSight(LineOfSight.scala:37)
+reductions.LineOfSightSuite$$anonfun$3.apply$mcV$sp(LineOfSightSuite.scala:38)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::upsweepSequential should correctly handle the chunk 1 until 4 of an array of 4 elements::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.upsweepSequential(LineOfSight.scala:53)
+reductions.LineOfSightSuite$$anonfun$4.apply$mcV$sp(LineOfSightSuite.scala:50)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::upsweepSequential should correcly handle the chunk 1 until 5 of an array of 5 elements::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.upsweepSequential(LineOfSight.scala:53)
+reductions.LineOfSightSuite$$anonfun$5.apply$mcV$sp(LineOfSightSuite.scala:56)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::upsweepSequential should correctly handle a chunk of size 2 in an array of 5 elements::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.upsweepSequential(LineOfSight.scala:53)
+reductions.LineOfSightSuite$$anonfun$6.apply$mcV$sp(LineOfSightSuite.scala:61)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::upsweepSequential should correctly handle a chunk of size 3 in an array of 5 elements::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.upsweepSequential(LineOfSight.scala:53)
+reductions.LineOfSightSuite$$anonfun$7.apply$mcV$sp(LineOfSightSuite.scala:67)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::upsweep should correctly compute the tree on the indices 1 until 5 of a 5 element array for threshold 1::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.upsweep(LineOfSight.scala:66)
+reductions.LineOfSightSuite$$anonfun$8.apply$mcV$sp(LineOfSightSuite.scala:73)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::upsweep should correctly compute the tree on the indices 1 until 5 of a 5 element array for threshold 2::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.upsweep(LineOfSight.scala:66)
+reductions.LineOfSightSuite$$anonfun$9.apply$mcV$sp(LineOfSightSuite.scala:82)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::downsweepSequential should correctly handle a 4 element array when the starting angle is zero::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.downsweepSequential(LineOfSight.scala:75)
+reductions.LineOfSightSuite$$anonfun$10.apply$mcV$sp(LineOfSightSuite.scala:98)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::downsweepSequential should correctly handle a 5 element array when the starting angle is zero::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.downsweepSequential(LineOfSight.scala:75)
+reductions.LineOfSightSuite$$anonfun$11.apply$mcV$sp(LineOfSightSuite.scala:105)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::downsweepSequential should correctly handle a chunk of size 2 of an input array of size 5::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.downsweepSequential(LineOfSight.scala:75)
+reductions.LineOfSightSuite$$anonfun$12.apply$mcV$sp(LineOfSightSuite.scala:111)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::downsweepSequential should correctly handle a chunk of size 3 of an input array of size 5::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.downsweepSequential(LineOfSight.scala:75)
+reductions.LineOfSightSuite$$anonfun$13.apply$mcV$sp(LineOfSightSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::downsweepSequential should correctly handle empty chunks. E.g. if from >= end, downsweepSequential should not write anything into the output array::1
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.downsweepSequential(LineOfSight.scala:75)
+reductions.LineOfSightSuite$$anonfun$14.apply$mcV$sp(LineOfSightSuite.scala:124)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::downsweep should correctly compute the output for a tree with 4 leaves when the starting angle is zero::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.downsweep(LineOfSight.scala:84)
+reductions.LineOfSightSuite$$anonfun$15.apply$mcV$sp(LineOfSightSuite.scala:134)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::downsweep should correctly handle trees with a single leaf::1
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.downsweep(LineOfSight.scala:84)
+reductions.LineOfSightSuite$$anonfun$16.apply$mcV$sp(LineOfSightSuite.scala:141)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::downsweep should correctly compute the output for a non-zero starting angle::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.downsweep(LineOfSight.scala:84)
+reductions.LineOfSightSuite$$anonfun$17.apply$mcV$sp(LineOfSightSuite.scala:150)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::parLineOfSight should correctly compute the output for threshold 2::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.parLineOfSight(LineOfSight.scala:90)
+reductions.LineOfSightSuite$$anonfun$18.apply$mcV$sp(LineOfSightSuite.scala:157)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::parLineOfSight should correctly compute the output for threshold 3::2
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.parLineOfSight(LineOfSight.scala:90)
+reductions.LineOfSightSuite$$anonfun$19.apply$mcV$sp(LineOfSightSuite.scala:163)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+scala.collection.immutable.List.foreach(List.scala:381)
+
+
+[test failure log] test name: LineOfSightSuite::upsweep should not use task construct directly and should only use the parallel construct::1
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.upsweep(LineOfSight.scala:66)
+reductions.LineOfSightSuite$$anonfun$20$$anonfun$apply$mcV$sp$12.apply(LineOfSightSuite.scala:179)
+reductions.LineOfSightSuite$$anonfun$20$$anonfun$apply$mcV$sp$12.apply(LineOfSightSuite.scala:177)
+scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+reductions.LineOfSightSuite$$anonfun$20.apply$mcV$sp(LineOfSightSuite.scala:177)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+
+
+[test failure log] test name: LineOfSightSuite::upsweep should invoke the parallel construct 15 times for an array section of size 16, with threshold 1::3
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.upsweep(LineOfSight.scala:66)
+reductions.LineOfSightSuite$$anonfun$22$$anonfun$apply$mcV$sp$13.apply(LineOfSightSuite.scala:196)
+reductions.LineOfSightSuite$$anonfun$22$$anonfun$apply$mcV$sp$13.apply(LineOfSightSuite.scala:194)
+scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+reductions.LineOfSightSuite$$anonfun$22.apply$mcV$sp(LineOfSightSuite.scala:194)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+
+
+[test failure log] test name: LineOfSightSuite::downsweep should not use task construct directly and should only use the parallel construct::1
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.downsweep(LineOfSight.scala:84)
+reductions.LineOfSightSuite$$anonfun$24$$anonfun$apply$mcV$sp$6.apply$mcV$sp(LineOfSightSuite.scala:220)
+reductions.LineOfSightSuite$$anonfun$24$$anonfun$apply$mcV$sp$6.apply(LineOfSightSuite.scala:220)
+reductions.LineOfSightSuite$$anonfun$24$$anonfun$apply$mcV$sp$6.apply(LineOfSightSuite.scala:220)
+scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+reductions.LineOfSightSuite$$anonfun$24.apply$mcV$sp(LineOfSightSuite.scala:219)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+
+
+[test failure log] test name: LineOfSightSuite::downsweep should invoke the parallel construct n times for a tree with n internal nodes::3
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.downsweep(LineOfSight.scala:84)
+reductions.LineOfSightSuite$$anonfun$26$$anonfun$apply$mcV$sp$8.apply$mcV$sp(LineOfSightSuite.scala:249)
+reductions.LineOfSightSuite$$anonfun$26$$anonfun$apply$mcV$sp$8.apply(LineOfSightSuite.scala:247)
+reductions.LineOfSightSuite$$anonfun$26$$anonfun$apply$mcV$sp$8.apply(LineOfSightSuite.scala:247)
+scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+reductions.LineOfSightSuite$$anonfun$26.apply$mcV$sp(LineOfSightSuite.scala:247)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+
+
+[test failure log] test name: LineOfSightSuite::parLineOfSight should invoke the parallel construct 30 times (15 times during upsweep and 15 times during downsweep) for an array of size 17, with threshold 1::3
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.parLineOfSight(LineOfSight.scala:90)
+reductions.LineOfSightSuite$$anonfun$28$$anonfun$apply$mcV$sp$10.apply$mcV$sp(LineOfSightSuite.scala:269)
+reductions.LineOfSightSuite$$anonfun$28$$anonfun$apply$mcV$sp$10.apply(LineOfSightSuite.scala:266)
+reductions.LineOfSightSuite$$anonfun$28$$anonfun$apply$mcV$sp$10.apply(LineOfSightSuite.scala:266)
+scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+reductions.LineOfSightSuite$$anonfun$28.apply$mcV$sp(LineOfSightSuite.scala:266)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+
+
+[test failure log] test name: LineOfSightSuite::parLineOfSight should call parallel constuct 6 times, where the last two parallel constructs should update the 4 sections of the array (1 until 5), (5 until 9), (9 until 13), (13 until 17), respectively::6
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.LineOfSight$.parLineOfSight(LineOfSight.scala:90)
+reductions.LineOfSightSuite$$anonfun$30$$anonfun$apply$mcV$sp$11.apply$mcV$sp(LineOfSightSuite.scala:332)
+reductions.LineOfSightSuite$$anonfun$30$$anonfun$apply$mcV$sp$11.apply(LineOfSightSuite.scala:332)
+reductions.LineOfSightSuite$$anonfun$30$$anonfun$apply$mcV$sp$11.apply(LineOfSightSuite.scala:332)
+scala.util.DynamicVariable.withValue(DynamicVariable.scala:58)
+reductions.LineOfSightSuite$$anonfun$30.apply$mcV$sp(LineOfSightSuite.scala:331)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+
+
+[test failure log] test name: ParallelParenthesesBalancingSuite::balance should work for empty string::5
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.ParallelParenthesesBalancing$.balance(ParallelParenthesesBalancing.scala:44)
+reductions.ParallelParenthesesBalancingSuite$$anonfun$1.check$1(ParallelParenthesesBalancingSuite.scala:26)
+reductions.ParallelParenthesesBalancingSuite$$anonfun$1.apply$mcV$sp(ParallelParenthesesBalancingSuite.scala:29)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+
+
+[test failure log] test name: ParallelParenthesesBalancingSuite::balance should work for string of length 1::5
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.ParallelParenthesesBalancing$.balance(ParallelParenthesesBalancing.scala:44)
+reductions.ParallelParenthesesBalancingSuite$$anonfun$2.check$2(ParallelParenthesesBalancingSuite.scala:38)
+reductions.ParallelParenthesesBalancingSuite$$anonfun$2.apply$mcV$sp(ParallelParenthesesBalancingSuite.scala:41)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
+org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
+org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
+org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
+
+
+[test failure log] test name: ParallelParenthesesBalancingSuite::balance should work for string of length 2::5
+scala.NotImplementedError: an implementation is missing
+scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
+reductions.ParallelParenthesesBalancing$.balance(ParallelParenthesesBalancing.scala:44)
+reductions.ParallelParenthesesBalancingSuite$$anonfun$3.check$3(ParallelParenthesesBalancingSuite.scala:52)
+reductions.ParallelParenthesesBalancingSuite$$anonfun$3.apply$mcV$sp(ParallelParenthesesBalancingSuite.scala:55)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
+org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
+org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
+org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+org.scalatest.Transformer.apply(Transformer.scala:22)
+org.scalatest.Transformer.apply(Transformer.scala:20)
+org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
+org.scalatest.Suite$class.withFixture(Suite.scala:1122)
+org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
+org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
+org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(
+[Feedback clipped, Coursera doesn't allow us to display more than 64kb of feedback]
