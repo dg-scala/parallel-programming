@@ -71,6 +71,10 @@ class KMeansSuite extends FunSuite {
     checkParClassify(points, means, expected)
   }
 
+  test("'kMeans' should work for 'points' == GenSeq((0, 0, 1), (0,0, -1), (0,1,0), (0,10,0)) and 'oldMeans' == GenSeq((0, -1, 0), (0, 2, 0)) and 'eta' == 12.25") {
+    //  [Observed Error] Util.equalPointSeq(KM.kMeans(points, means, eta), expected) was false KMeans(Vector((0.0, 0.0, 1.0), (0.0, 0.0, -1.0), (0.0, 1.0, 0.0), (0.0, 10.0, 0.0)), means) should equal to Vector((0.0, 0.0, 0.0), (0.0, 5.5, 0.0))
+  }
+
 }
 
 
