@@ -61,7 +61,7 @@ package object barneshut {
     val massX: Float = (nw.mass * nw.centerX + ne.mass * ne.centerX + sw.mass + sw.centerX + se.mass + se.centerX) / mass
     val massY: Float = (nw.mass * nw.centerY + ne.mass * ne.centerY + sw.mass + sw.centerY + se.mass + se.centerY) / mass
     val total: Int = nw.total + ne.total + sw.total + se.total
-x§
+
     def insert(b: Body): Fork = {
       ???
     }
