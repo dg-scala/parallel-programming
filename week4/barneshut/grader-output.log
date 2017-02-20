@@ -1,8 +1,8 @@
-Your overall score for this assignment is 3.97 out of 10.00
+Your overall score for this assignment is 5.24 out of 10.00
 
 
 The code you submitted did not pass all of our tests: your submission achieved a score of
-3.97 out of 10.00 in our tests.
+5.24 out of 10.00 in our tests.
 
 In order to find bugs in your code, we advise to perform the following steps:
  - Take a close look at the test output that you can find below: it should point you to
@@ -16,7 +16,7 @@ In order to find bugs in your code, we advise to perform the following steps:
 Below you can find a short feedback for every individual test that failed.
 
 ======== LOG OF FAILED TESTS ========
-Your solution achieved a testing score of 25 out of 63.
+Your solution achieved a testing score of 33 out of 63.
 
 Below you can see a short feedback for every test that failed,
 indicating the reason for the test failure and how many points
@@ -27,17 +27,9 @@ JVM. Such crashes can arise due to infinite non-terminitaing
 loops or recursion (StackOverflowException) or excessive memory
 consumption (OutOfMemoryException).
 
-[Test Description] Body.updated should consider a Fork as opaque if it is far away
-[Observed Error] FloatOps.DoubleOps(body.xspeed.toDouble).~=(-0.33580848574638367) was false xspeed was 0.0
-[Lost Points] 2
-
 [Test Description] 'mergeBoundaries' should correctly merge two boundaries
 [Observed Error] an implementation is missing
 [exception was thrown] detailed error message in debug output section below
-[Lost Points] 2
-
-[Test Description] Body.updated should take bodies in a Leaf into account
-[Observed Error] FloatOps.DoubleOps(body.xspeed.toDouble).~=(12.587037086486816) was false
 [Lost Points] 2
 
 [Test Description] 'SectorMatrix.+=' should add a body at (25,47) to the correct bucket of a sector matrix of size 96
@@ -78,10 +70,6 @@ consumption (OutOfMemoryException).
 [exception was thrown] detailed error message in debug output section below
 [Lost Points] 2
 
-[Test Description] Body.updated should recursively traverse a Fork close to it
-[Observed Error] FloatOps.DoubleOps(body.xspeed.toDouble).~=(0.2641816735267639) was false xspeed was 0.0
-[Lost Points] 2
-
 [Test Description] updateBodies should correctly update all bodies wrt to a Quad
 [Observed Error] an implementation is missing
 [exception was thrown] detailed error message in debug output section below
@@ -102,10 +90,6 @@ consumption (OutOfMemoryException).
 [exception was thrown] detailed error message in debug output section below
 [Lost Points] 2
 
-[Test Description] Body.updated should not count the interaction with itself in a Leaf
-[Observed Error] FloatOps.DoubleOps(body.xspeed.toDouble).~=(12.587037086486816) was false
-[Lost Points] 2
-
 [Test Description] updateBodies should be parallel
 [Observed Error] an implementation is missing
 [exception was thrown] detailed error message in debug output section below
@@ -123,7 +107,7 @@ Limits: memory: 256m,  total time: 850s,  per test case time: 240s
 [test failure log] test name: BarnesHutSuite::'SectorMatrix.+=' should add a body at (25,47) to the correct bucket of a sector matrix of size 96::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.package$SectorMatrix.$plus$eq(package.scala:192)
+barneshut.package$SectorMatrix.$plus$eq(package.scala:201)
 barneshut.BarnesHutSuite$$anonfun$24.apply$mcV$sp(BarnesHutSuite.scala:503)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -152,7 +136,7 @@ scala.collection.immutable.List.foreach(List.scala:381)
 [test failure log] test name: BarnesHutSuite::'SectorMatrix.+=' should add a body at (25,47) to the correct bucket of a sector matrix of size 100::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.package$SectorMatrix.$plus$eq(package.scala:192)
+barneshut.package$SectorMatrix.$plus$eq(package.scala:201)
 barneshut.BarnesHutSuite$$anonfun$25.apply$mcV$sp(BarnesHutSuite.scala:517)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -181,7 +165,7 @@ scala.collection.immutable.List.foreach(List.scala:381)
 [test failure log] test name: BarnesHutSuite::'SectorMatrix.+=' should add a body at (64,27) to the correct bucket of a sector matrix of size 108 when the sector precision is 12::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.package$SectorMatrix.$plus$eq(package.scala:192)
+barneshut.package$SectorMatrix.$plus$eq(package.scala:201)
 barneshut.BarnesHutSuite$$anonfun$26.apply$mcV$sp(BarnesHutSuite.scala:531)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -210,7 +194,7 @@ scala.collection.immutable.List.foreach(List.scala:381)
 [test failure log] test name: BarnesHutSuite::'SectorMatrix.combine' should correctly combine two sector matrices of size 96 containing points: (12, 34), (23, 45), (56, 9), (8, 79), (5, 99)::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.package$SectorMatrix.$plus$eq(package.scala:192)
+barneshut.package$SectorMatrix.$plus$eq(package.scala:201)
 barneshut.BarnesHutSuite$$anonfun$27.apply$mcV$sp(BarnesHutSuite.scala:549)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -239,7 +223,7 @@ scala.collection.immutable.List.foreach(List.scala:381)
 [test failure log] test name: BarnesHutSuite::'SectorMatrix.combine' should correctly combine two sector matrices of size 96 that contain some points in the same sector::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.package$SectorMatrix.$plus$eq(package.scala:192)
+barneshut.package$SectorMatrix.$plus$eq(package.scala:201)
 barneshut.BarnesHutSuite$$anonfun$28.apply$mcV$sp(BarnesHutSuite.scala:579)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -357,7 +341,7 @@ scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:31)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:28)
-barneshut.package$TimeStatistics.timed(package.scala:247)
+barneshut.package$TimeStatistics.timed(package.scala:256)
 barneshut.Simulator.computeSectorMatrix(Simulator.scala:28)
 barneshut.BarnesHutSuite$$anonfun$32.apply$mcV$sp(BarnesHutSuite.scala:646)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
@@ -386,7 +370,7 @@ scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:31)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:28)
-barneshut.package$TimeStatistics.timed(package.scala:247)
+barneshut.package$TimeStatistics.timed(package.scala:256)
 barneshut.Simulator.computeSectorMatrix(Simulator.scala:28)
 barneshut.BarnesHutSuite$$anonfun$33.apply$mcV$sp(BarnesHutSuite.scala:666)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
@@ -415,7 +399,7 @@ scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:31)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:28)
-barneshut.package$TimeStatistics.timed(package.scala:247)
+barneshut.package$TimeStatistics.timed(package.scala:256)
 barneshut.Simulator.computeSectorMatrix(Simulator.scala:28)
 barneshut.BarnesHutSuite$$anonfun$34.apply$mcV$sp(BarnesHutSuite.scala:692)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
@@ -444,7 +428,7 @@ scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
 barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:41)
 barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:38)
-barneshut.package$TimeStatistics.timed(package.scala:247)
+barneshut.package$TimeStatistics.timed(package.scala:256)
 barneshut.Simulator.updateBodies(Simulator.scala:38)
 barneshut.BarnesHutSuite$$anonfun$35.apply$mcV$sp(BarnesHutSuite.scala:706)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
@@ -473,7 +457,7 @@ scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
 barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:41)
 barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:38)
-barneshut.package$TimeStatistics.timed(package.scala:247)
+barneshut.package$TimeStatistics.timed(package.scala:256)
 barneshut.Simulator.updateBodies(Simulator.scala:38)
 barneshut.BarnesHutSuite$$anonfun$36.apply$mcV$sp(BarnesHutSuite.scala:727)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
