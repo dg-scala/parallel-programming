@@ -75,11 +75,11 @@ package object barneshut {
     val total: Int = nw.total + ne.total + sw.total + se.total
 
     def insert(b: Body): Fork = {
-      val quad = Seq(nw, ne, sw, se).fold(nw) { (q0: Quad, q1: Quad) =>
+      val quad = Seq(nw, ne, sw, se).fold(nw) {(q0: Quad, q1: Quad) =>
         val d0 = distance(b.x, b.y, q0.centerX, q0.centerY)
         val d1 = distance(b.x, b.y, q1.centerX, q1.centerY)
         if (d1 < d0) q1 else q0
-      }
+                                              }
       if (quad == nw)
         Fork(nw.insert(b), ne, sw, se)
       else if (quad == ne)
@@ -95,7 +95,7 @@ package object barneshut {
     extends Quad {
     val (mass, massX, massY) = {
       val (m: Float, sumMx: Float, sumMy: Float) =
-        bodies.foldLeft((0f, 0f, 0f)) { (acc, b) => (acc._1 + b.mass, acc._2 + b.mass * b.x, acc._3 + b.mass * b.y) }
+        bodies.foldLeft((0f, 0f, 0f)) {(acc, b) => (acc._1 + b.mass, acc._2 + b.mass * b.x, acc._3 + b.mass * b.y)}
       (m, sumMx / m, sumMy / m)
     }
     val total: Int = bodies.size
@@ -161,14 +161,14 @@ package object barneshut {
 
       def traverse(quad: Quad): Unit = (quad: Quad) match {
         case Empty(_, _, _) =>
-          // no force
+        // no force
         case Leaf(_, _, _, bodies) =>
           // add force contribution of each body by calling addForce
-          bodies.foreach { b => addForce(b.mass, b.x, b.y) }
-        case quad @ Fork(nw, ne, sw, se) =>
+          bodies.foreach {b => addForce(b.mass, b.x, b.y)}
+        case quad@Fork(nw, ne, sw, se) =>
           // see if node is far enough from the body,
           // or recursion is needed
-          if (quad.size / distance(x, y, quad.massX, quad.massY)  < theta)
+          if (quad.size / distance(x, y, quad.massX, quad.massY) < theta)
             addForce(quad.mass, quad.massX, quad.massY)
           else {
             traverse(nw)
@@ -198,14 +198,36 @@ package object barneshut {
     for (i <- 0 until matrix.length) matrix(i) = new ConcBuffer
 
     def +=(b: Body): SectorMatrix = {
-      ???
+      // find a segment to which body should belong taking care that a body
+      // outside Boundaries should belong to the nearest boundary segment.
+      val adjX: Float =
+        if (b.x < boundaries.minX) boundaries.minX
+        else if (b.x > boundaries.maxX) boundaries.maxX
+        else b.x
+
+      val adjY: Float =
+        if (b.y < boundaries.minY) boundaries.minY
+        else if (b.y > boundaries.maxY) boundaries.maxY
+        else b.y
+      // adjust for maxX and maxY boundaries by going no further than
+      // (sectorPrecision - 1) array index in either X or Y direction
+      val (x: Int, y: Int) = (
+        math.min(math.floor((adjX - boundaries.minX) / sectorSize).toInt, sectorPrecision - 1),
+        math.min(math.floor((adjY - boundaries.minY) / sectorSize).toInt, sectorPrecision - 1)
+      )
+
+      apply(x, y) += b
       this
     }
 
     def apply(x: Int, y: Int) = matrix(y * sectorPrecision + x)
 
     def combine(that: SectorMatrix): SectorMatrix = {
-      ???
+      val m = new Array[ConcBuffer[Body]](sectorPrecision * sectorPrecision)
+      for (x <- 0 until sectorPrecision; y <- 0 until sectorPrecision) yield {
+        matrix(y * sectorPrecision + x) = apply(x, y).combine(that.apply(x, y))
+      }
+      this
     }
 
     def toQuad(parallelism: Int): Quad = {
