@@ -1,8 +1,8 @@
-Your overall score for this assignment is 6.83 out of 10.00
+Your overall score for this assignment is 7.46 out of 10.00
 
 
 The code you submitted did not pass all of our tests: your submission achieved a score of
-6.83 out of 10.00 in our tests.
+7.46 out of 10.00 in our tests.
 
 In order to find bugs in your code, we advise to perform the following steps:
  - Take a close look at the test output that you can find below: it should point you to
@@ -16,7 +16,7 @@ In order to find bugs in your code, we advise to perform the following steps:
 Below you can find a short feedback for every individual test that failed.
 
 ======== LOG OF FAILED TESTS ========
-Your solution achieved a testing score of 43 out of 63.
+Your solution achieved a testing score of 47 out of 63.
 
 Below you can see a short feedback for every test that failed,
 indicating the reason for the test failure and how many points
@@ -32,17 +32,9 @@ consumption (OutOfMemoryException).
 [exception was thrown] detailed error message in debug output section below
 [Lost Points] 2
 
-[Test Description] Leaf.insert(b) should return a new Fork if size > minimumSize
-[Observed Error] FloatOps.DoubleOps(centerX.toDouble).~=(17.5) was false
-[Lost Points] 2
-
 [Test Description] computeSectorMatrix should be parallel
 [Observed Error] an implementation is missing
 [exception was thrown] detailed error message in debug output section below
-[Lost Points] 2
-
-[Test Description] Fork.insert(b) should insert recursively in the appropriate quadrant
-[Observed Error] FloatOps.DoubleOps(centerX.toDouble).~=(17.5) was false
 [Lost Points] 2
 
 [Test Description] 'computeSectorMatrix' should correctly work given 5 points within a boundary of size 96 when some points map to the same sector
@@ -79,6 +71,8 @@ consumption (OutOfMemoryException).
 Limits: memory: 256m,  total time: 850s,  per test case time: 240s
 
 ======== DEBUG OUTPUT OF TESTING TOOL ========
+
+
 [test failure log] test name: BarnesHutSuite::'updateBoundaries' should correctly update the boundary given a body at (3,5)::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
@@ -171,7 +165,7 @@ scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:31)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:28)
-barneshut.package$TimeStatistics.timed(package.scala:278)
+barneshut.package$TimeStatistics.timed(package.scala:288)
 barneshut.Simulator.computeSectorMatrix(Simulator.scala:28)
 barneshut.BarnesHutSuite$$anonfun$32.apply$mcV$sp(BarnesHutSuite.scala:646)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
@@ -200,7 +194,7 @@ scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:31)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:28)
-barneshut.package$TimeStatistics.timed(package.scala:278)
+barneshut.package$TimeStatistics.timed(package.scala:288)
 barneshut.Simulator.computeSectorMatrix(Simulator.scala:28)
 barneshut.BarnesHutSuite$$anonfun$33.apply$mcV$sp(BarnesHutSuite.scala:666)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
@@ -229,7 +223,7 @@ scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:31)
 barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:28)
-barneshut.package$TimeStatistics.timed(package.scala:278)
+barneshut.package$TimeStatistics.timed(package.scala:288)
 barneshut.Simulator.computeSectorMatrix(Simulator.scala:28)
 barneshut.BarnesHutSuite$$anonfun$34.apply$mcV$sp(BarnesHutSuite.scala:692)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
@@ -258,7 +252,7 @@ scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
 barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:41)
 barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:38)
-barneshut.package$TimeStatistics.timed(package.scala:278)
+barneshut.package$TimeStatistics.timed(package.scala:288)
 barneshut.Simulator.updateBodies(Simulator.scala:38)
 barneshut.BarnesHutSuite$$anonfun$35.apply$mcV$sp(BarnesHutSuite.scala:706)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
@@ -287,7 +281,7 @@ scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
 barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:41)
 barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:38)
-barneshut.package$TimeStatistics.timed(package.scala:278)
+barneshut.package$TimeStatistics.timed(package.scala:288)
 barneshut.Simulator.updateBodies(Simulator.scala:38)
 barneshut.BarnesHutSuite$$anonfun$36.apply$mcV$sp(BarnesHutSuite.scala:727)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)

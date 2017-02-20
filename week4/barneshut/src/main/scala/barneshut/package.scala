@@ -80,6 +80,7 @@ package object barneshut {
         val d1 = distance(b.x, b.y, q1.centerX, q1.centerY)
         if (d1 < d0) q1 else q0
                                               }
+
       if (quad == nw)
         Fork(nw.insert(b), ne, sw, se)
       else if (quad == ne)
@@ -103,10 +104,10 @@ package object barneshut {
     def insert(b: Body): Quad =
       if (size > minimumSize) {
         val f = Fork(
-          Empty(centerX / 2, centerY / 2, size / 2),
-          Empty(3 * centerX / 2, centerY / 2, size / 2),
-          Empty(centerX / 2, 3 * centerY / 2, size / 2),
-          Empty(3 * centerX / 2, 3 * centerY / 2, size / 2)
+          Empty(centerX - size / 4, centerY - size / 4, size / 2),
+          Empty(centerX + size / 4, centerY - size / 4, size / 2),
+          Empty(centerX - size / 4, centerY + size / 4, size / 2),
+          Empty(centerX + size / 4, centerY + size / 4, size / 2)
         )
         (bodies :+ b).foldLeft(f)((fk, b) => fk.insert(b))
       }
@@ -201,9 +202,9 @@ package object barneshut {
       // find a segment to which body should belong taking care that a body
       // outside Boundaries should belong to the nearest boundary segment.
       val adjX: Float =
-        if (b.x < boundaries.minX) boundaries.minX
-        else if (b.x > boundaries.maxX) boundaries.maxX
-        else b.x
+      if (b.x < boundaries.minX) boundaries.minX
+      else if (b.x > boundaries.maxX) boundaries.maxX
+      else b.x
 
       val adjY: Float =
         if (b.y < boundaries.minY) boundaries.minY
