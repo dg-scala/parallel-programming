@@ -12,21 +12,10 @@ import common._
 class Simulator(val taskSupport: TaskSupport, val timeStats: TimeStatistics) {
 
   def updateBoundaries(boundaries: Boundaries, body: Body): Boundaries = {
-    // minX and maxX
-    if (boundaries.minX > body.x) {
-      boundaries.minX = body.x
-    }
-    else if (boundaries.maxX < body.x) {
-      boundaries.maxX = body.x
-    }
-    // minY and maxY
-    if (boundaries.minY > body.y) {
-      boundaries.minY = body.y
-    }
-    else if (boundaries.maxY < body.y) {
-      boundaries.maxY = body.y
-    }
-
+    boundaries.minX = math.min(boundaries.minX, body.x)
+    boundaries.maxX = math.max(boundaries.maxX, body.x)
+    boundaries.minY = math.min(boundaries.minY, body.y)
+    boundaries.maxY = math.max(boundaries.maxY, body.y)
     boundaries
   }
 
