@@ -1,8 +1,8 @@
-Your overall score for this assignment is 8.10 out of 10.00
+Your overall score for this assignment is 8.41 out of 10.00
 
 
 The code you submitted did not pass all of our tests: your submission achieved a score of
-8.10 out of 10.00 in our tests.
+8.41 out of 10.00 in our tests.
 
 In order to find bugs in your code, we advise to perform the following steps:
  - Take a close look at the test output that you can find below: it should point you to
@@ -16,7 +16,7 @@ In order to find bugs in your code, we advise to perform the following steps:
 Below you can find a short feedback for every individual test that failed.
 
 ======== LOG OF FAILED TESTS ========
-Your solution achieved a testing score of 51 out of 63.
+Your solution achieved a testing score of 53 out of 63.
 
 Below you can see a short feedback for every test that failed,
 indicating the reason for the test failure and how many points
@@ -35,10 +35,6 @@ consumption (OutOfMemoryException).
 [Test Description] 'computeSectorMatrix' should correctly work given 5 points within a boundary of size 96 when some points map to the same sector
 [Observed Error] an implementation is missing
 [exception was thrown] detailed error message in debug output section below
-[Lost Points] 2
-
-[Test Description] 'updateBoundaries' should correctly update the boundary given a body at (3,5)
-[Observed Error] 3.0 equaled 3, but -3.4028235E38 did not equal 3 minX and maxX are not correctly updated
 [Lost Points] 2
 
 [Test Description] updateBodies should correctly update all bodies wrt to a Quad
@@ -63,10 +59,10 @@ Limits: memory: 256m,  total time: 850s,  per test case time: 240s
 [test failure log] test name: BarnesHutSuite::'computeSectorMatrix' should correctly add points to buckets given 7 points within a boundary of size 96::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:51)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:48)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:40)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:37)
 barneshut.package$TimeStatistics.timed(package.scala:279)
-barneshut.Simulator.computeSectorMatrix(Simulator.scala:48)
+barneshut.Simulator.computeSectorMatrix(Simulator.scala:37)
 barneshut.BarnesHutSuite$$anonfun$32.apply$mcV$sp(BarnesHutSuite.scala:646)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -92,10 +88,10 @@ org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
 [test failure log] test name: BarnesHutSuite::'computeSectorMatrix' should correctly work given 5 points within a boundary of size 96 when some points map to the same sector::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:51)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:48)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:40)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:37)
 barneshut.package$TimeStatistics.timed(package.scala:279)
-barneshut.Simulator.computeSectorMatrix(Simulator.scala:48)
+barneshut.Simulator.computeSectorMatrix(Simulator.scala:37)
 barneshut.BarnesHutSuite$$anonfun$33.apply$mcV$sp(BarnesHutSuite.scala:666)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -121,10 +117,10 @@ org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
 [test failure log] test name: BarnesHutSuite::computeSectorMatrix should be parallel::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:51)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:48)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:40)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:37)
 barneshut.package$TimeStatistics.timed(package.scala:279)
-barneshut.Simulator.computeSectorMatrix(Simulator.scala:48)
+barneshut.Simulator.computeSectorMatrix(Simulator.scala:37)
 barneshut.BarnesHutSuite$$anonfun$34.apply$mcV$sp(BarnesHutSuite.scala:692)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -150,10 +146,10 @@ org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
 [test failure log] test name: BarnesHutSuite::updateBodies should correctly update all bodies wrt to a Quad::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:61)
-barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:58)
+barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:50)
+barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:47)
 barneshut.package$TimeStatistics.timed(package.scala:279)
-barneshut.Simulator.updateBodies(Simulator.scala:58)
+barneshut.Simulator.updateBodies(Simulator.scala:47)
 barneshut.BarnesHutSuite$$anonfun$35.apply$mcV$sp(BarnesHutSuite.scala:706)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -179,10 +175,10 @@ org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
 [test failure log] test name: BarnesHutSuite::updateBodies should be parallel::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:61)
-barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:58)
+barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:50)
+barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:47)
 barneshut.package$TimeStatistics.timed(package.scala:279)
-barneshut.Simulator.updateBodies(Simulator.scala:58)
+barneshut.Simulator.updateBodies(Simulator.scala:47)
 barneshut.BarnesHutSuite$$anonfun$36.apply$mcV$sp(BarnesHutSuite.scala:727)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
