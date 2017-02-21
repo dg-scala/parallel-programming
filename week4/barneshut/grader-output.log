@@ -1,8 +1,8 @@
-Your overall score for this assignment is 7.46 out of 10.00
+Your overall score for this assignment is 7.78 out of 10.00
 
 
 The code you submitted did not pass all of our tests: your submission achieved a score of
-7.46 out of 10.00 in our tests.
+7.78 out of 10.00 in our tests.
 
 In order to find bugs in your code, we advise to perform the following steps:
  - Take a close look at the test output that you can find below: it should point you to
@@ -16,7 +16,7 @@ In order to find bugs in your code, we advise to perform the following steps:
 Below you can find a short feedback for every individual test that failed.
 
 ======== LOG OF FAILED TESTS ========
-Your solution achieved a testing score of 47 out of 63.
+Your solution achieved a testing score of 49 out of 63.
 
 Below you can see a short feedback for every test that failed,
 indicating the reason for the test failure and how many points
@@ -26,11 +26,6 @@ Tests that were aborted took too long too complete or crashed the
 JVM. Such crashes can arise due to infinite non-terminitaing
 loops or recursion (StackOverflowException) or excessive memory
 consumption (OutOfMemoryException).
-
-[Test Description] 'mergeBoundaries' should correctly merge two boundaries
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
-[Lost Points] 2
 
 [Test Description] computeSectorMatrix should be parallel
 [Observed Error] an implementation is missing
@@ -43,8 +38,7 @@ consumption (OutOfMemoryException).
 [Lost Points] 2
 
 [Test Description] 'updateBoundaries' should correctly update the boundary given a body at (3,5)
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
+[Observed Error] 3.0 equaled 3, but -3.4028235E38 did not equal 3 minX and maxX are not correctly updated
 [Lost Points] 2
 
 [Test Description] updateBodies should correctly update all bodies wrt to a Quad
@@ -63,110 +57,20 @@ consumption (OutOfMemoryException).
 [Lost Points] 2
 
 [Test Description] 'updateBoundaries' should correctly update the boundary when invoked repeatedly with points in the range (0,0) to (100,100)
-[Observed Error] an implementation is missing
-[exception was thrown] detailed error message in debug output section below
+[Observed Error] -29.0 did not equal 9 minY and maxY are not correctly updated
 [Lost Points] 2
 
 ======== TESTING ENVIRONMENT ========
 Limits: memory: 256m,  total time: 850s,  per test case time: 240s
 
 ======== DEBUG OUTPUT OF TESTING TOOL ========
-
-
-[test failure log] test name: BarnesHutSuite::'updateBoundaries' should correctly update the boundary given a body at (3,5)::2
-scala.NotImplementedError: an implementation is missing
-scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator.updateBoundaries(Simulator.scala:15)
-barneshut.BarnesHutSuite$$anonfun$29.apply$mcV$sp(BarnesHutSuite.scala:605)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
-org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
-org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
-org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
-org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
-scala.collection.immutable.List.foreach(List.scala:381)
-
-
-[test failure log] test name: BarnesHutSuite::'updateBoundaries' should correctly update the boundary when invoked repeatedly with points in the range (0,0) to (100,100)::2
-scala.NotImplementedError: an implementation is missing
-scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator.updateBoundaries(Simulator.scala:15)
-barneshut.BarnesHutSuite$$anonfun$30$$anonfun$47.apply(BarnesHutSuite.scala:616)
-barneshut.BarnesHutSuite$$anonfun$30$$anonfun$47.apply(BarnesHutSuite.scala:616)
-scala.collection.LinearSeqOptimized$class.foldLeft(LinearSeqOptimized.scala:124)
-scala.collection.immutable.List.foldLeft(List.scala:84)
-barneshut.BarnesHutSuite$$anonfun$30.apply$mcV$sp(BarnesHutSuite.scala:616)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
-org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
-
-
-[test failure log] test name: BarnesHutSuite::'mergeBoundaries' should correctly merge two boundaries::2
-scala.NotImplementedError: an implementation is missing
-scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator.mergeBoundaries(Simulator.scala:19)
-barneshut.BarnesHutSuite$$anonfun$31.apply$mcV$sp(BarnesHutSuite.scala:632)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
-org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)
-org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)
-org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
-org.scalatest.Transformer.apply(Transformer.scala:22)
-org.scalatest.Transformer.apply(Transformer.scala:20)
-org.scalatest.FunSuiteLike$$anon$1.apply(FunSuiteLike.scala:166)
-org.scalatest.Suite$class.withFixture(Suite.scala:1122)
-org.scalatest.FunSuite.withFixture(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$class.invokeWithFixture$1(FunSuiteLike.scala:163)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.FunSuiteLike$$anonfun$runTest$1.apply(FunSuiteLike.scala:175)
-org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
-org.scalatest.FunSuiteLike$class.runTest(FunSuiteLike.scala:175)
-org.scalatest.FunSuite.runTest(FunSuite.scala:1555)
-org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
-org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
-org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:413)
-org.scalatest.SuperEngine$$anonfun$traverseSubNodes$1$1.apply(Engine.scala:401)
-scala.collection.immutable.List.foreach(List.scala:381)
-
-
 [test failure log] test name: BarnesHutSuite::'computeSectorMatrix' should correctly add points to buckets given 7 points within a boundary of size 96::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:31)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:28)
-barneshut.package$TimeStatistics.timed(package.scala:288)
-barneshut.Simulator.computeSectorMatrix(Simulator.scala:28)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:55)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:52)
+barneshut.package$TimeStatistics.timed(package.scala:279)
+barneshut.Simulator.computeSectorMatrix(Simulator.scala:52)
 barneshut.BarnesHutSuite$$anonfun$32.apply$mcV$sp(BarnesHutSuite.scala:646)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -192,10 +96,10 @@ org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
 [test failure log] test name: BarnesHutSuite::'computeSectorMatrix' should correctly work given 5 points within a boundary of size 96 when some points map to the same sector::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:31)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:28)
-barneshut.package$TimeStatistics.timed(package.scala:288)
-barneshut.Simulator.computeSectorMatrix(Simulator.scala:28)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:55)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:52)
+barneshut.package$TimeStatistics.timed(package.scala:279)
+barneshut.Simulator.computeSectorMatrix(Simulator.scala:52)
 barneshut.BarnesHutSuite$$anonfun$33.apply$mcV$sp(BarnesHutSuite.scala:666)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -221,10 +125,10 @@ org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
 [test failure log] test name: BarnesHutSuite::computeSectorMatrix should be parallel::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:31)
-barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:28)
-barneshut.package$TimeStatistics.timed(package.scala:288)
-barneshut.Simulator.computeSectorMatrix(Simulator.scala:28)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:55)
+barneshut.Simulator$$anonfun$computeSectorMatrix$1.apply(Simulator.scala:52)
+barneshut.package$TimeStatistics.timed(package.scala:279)
+barneshut.Simulator.computeSectorMatrix(Simulator.scala:52)
 barneshut.BarnesHutSuite$$anonfun$34.apply$mcV$sp(BarnesHutSuite.scala:692)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -250,10 +154,10 @@ org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
 [test failure log] test name: BarnesHutSuite::updateBodies should correctly update all bodies wrt to a Quad::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:41)
-barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:38)
-barneshut.package$TimeStatistics.timed(package.scala:288)
-barneshut.Simulator.updateBodies(Simulator.scala:38)
+barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:65)
+barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:62)
+barneshut.package$TimeStatistics.timed(package.scala:279)
+barneshut.Simulator.updateBodies(Simulator.scala:62)
 barneshut.BarnesHutSuite$$anonfun$35.apply$mcV$sp(BarnesHutSuite.scala:706)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
@@ -279,10 +183,10 @@ org.scalatest.FunSuiteLike$$anonfun$runTests$1.apply(FunSuiteLike.scala:208)
 [test failure log] test name: BarnesHutSuite::updateBodies should be parallel::2
 scala.NotImplementedError: an implementation is missing
 scala.Predef$.$qmark$qmark$qmark(Predef.scala:225)
-barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:41)
-barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:38)
-barneshut.package$TimeStatistics.timed(package.scala:288)
-barneshut.Simulator.updateBodies(Simulator.scala:38)
+barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:65)
+barneshut.Simulator$$anonfun$updateBodies$1.apply(Simulator.scala:62)
+barneshut.package$TimeStatistics.timed(package.scala:279)
+barneshut.Simulator.updateBodies(Simulator.scala:62)
 barneshut.BarnesHutSuite$$anonfun$36.apply$mcV$sp(BarnesHutSuite.scala:727)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply$mcV$sp(GradingSuite.scala:118)
 ch.epfl.lamp.grading.GradingSuite$$anonfun$test$1.apply(GradingSuite.scala:117)
